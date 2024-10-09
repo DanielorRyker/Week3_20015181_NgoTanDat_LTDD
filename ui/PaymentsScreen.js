@@ -28,7 +28,7 @@ const PaymentScreen = ({ route, navigation }) => {
   return (
     <View style={styles.container}>
       <TouchableOpacity onPress={() => navigation.goBack()} style={{ marginBottom: 20 }}>
-        <Image source={require('../assets/images/Image 183.png')} style={styles.icon} />
+        <Image source={require('../assets/images/Image183.png')} style={styles.icon} />
       </TouchableOpacity>
       <Text style={styles.sectionTitle}>My Basket</Text>
       <ScrollView>
@@ -39,16 +39,16 @@ const PaymentScreen = ({ route, navigation }) => {
               <Text style={{ color: '#1fd75c', fontSize: 18, fontWeight: '500' }}>${item.price}</Text>
               <Text>{item.name}</Text>
               <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginTop: 5 }}>
-                <Image source={require('../assets/images/Image 180.png')} style={styles.icon} />
+                <Image source={require('../assets/images/Image180.png')} style={styles.icon} />
               </View>
             </View>
             <View style={{marginLeft: '30%', flexDirection: 'row', alignItems: 'center' }}>
               <TouchableOpacity onPress={() => decreaseQuantity(index)}>
-                <Image source={require('../assets/images/Image 176.png')} style={styles.iconLevel} />
+                <Image source={require('../assets/images/Image176.png')} style={styles.iconLevel} />
               </TouchableOpacity>
               <Text style={{ marginHorizontal: 10 }}>{item.quantity}</Text>
               <TouchableOpacity onPress={() => increaseQuantity(index)}>
-                <Image source={require('../assets/images/Image 175.png')} style={styles.iconLevel} />
+                <Image source={require('../assets/images/Image175.png')} style={styles.iconLevel} />
               </TouchableOpacity>
             </View>
            

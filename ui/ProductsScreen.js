@@ -9,10 +9,10 @@ const ProductsScreen = () => {
         <Image source={require('../assets/images/Image_96.png')} style={styles.image} />
       </View>
       <View style={styles.imageRow}>
-        <Image source={require('../assets/images/Image 95.png')} style={styles.image} />
+        <Image source={require('../assets/images/Image95.png')} style={styles.image} />
       </View>
       <View style={[styles.imageRow, styles.alternate]}>
-        <Image source={require('../assets/images/Image 97.png')} style={styles.image} />
+        <Image source={require('../assets/images/Image97.png')} style={styles.image} />
       </View>
       <TouchableOpacity style={styles.button}
        onPress={() => navigation.navigate('Details')}

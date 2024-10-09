@@ -3,19 +3,19 @@ import { View, Text, ScrollView, Image, SafeAreaView, StyleSheet, TouchableOpaci
 
 function DetailsScreen({ navigation }) {
   const [data, setData] = useState([
-    {key: '1', type: 'vegetable', name: 'Apple', price: 20, image: require('../assets/images/Image 101.png')},
-    {key: '2', type: 'vegetable', name: 'Pear', price: 20, image: require('../assets/images/Image 102.png')},
-    {key: '3', type: 'vegetable', name: 'Coconut', price: 20, image: require('../assets/images/Image 103.png')},
-    {key: '4', type: 'vegetable', name: 'Pear', price: 20, image: require('../assets/images/Image 105.png')},
-    {key: '5', type: 'vegetable', name: 'Coconut', price: 20, image: require('../assets/images/Image 106.png')},
-    {key: '6', type: 'vegetable', name: 'Coconut', price: 20, image: require('../assets/images/Image 107.png')},
-    {key: '7', type: 'vegetable', name: 'Pear', price: 20, image: require('../assets/images/Image 105.png')},
+    {key: '1', type: 'vegetable', name: 'Apple', price: 20, image: require('../assets/images/Image101.png')},
+    {key: '2', type: 'vegetable', name: 'Pear', price: 20, image: require('../assets/images/Image102.png')},
+    {key: '3', type: 'vegetable', name: 'Coconut', price: 20, image: require('../assets/images/Image103.png')},
+    {key: '4', type: 'vegetable', name: 'Pear', price: 20, image: require('../assets/images/Image105.png')},
+    {key: '5', type: 'vegetable', name: 'Coconut', price: 20, image: require('../assets/images/Image106.png')},
+    {key: '6', type: 'vegetable', name: 'Coconut', price: 20, image: require('../assets/images/Image107.png')},
+    {key: '7', type: 'vegetable', name: 'Pear', price: 20, image: require('../assets/images/Image105.png')},
 
-    {key: '8', type: 'seafood', name: 'Seafood 1', price: 20, image: require('../assets/images/Image 95.png')},
-    {key: '9', type: 'seafood', name: 'Seafood 2', price: 20, image: require('../assets/images/Image 95.png')},
-    {key: '10', type: 'seafood', name: 'Seafood 3', price: 20, image: require('../assets/images/Image 95.png')},
-    {key: '11', type: 'seafood', name: 'Seafood 4', price: 20, image: require('../assets/images/Image 95.png')},
-    {key: '12', type: 'seafood', name: 'Seafood 5', price: 20, image: require('../assets/images/Image 95.png')},
+    {key: '8', type: 'seafood', name: 'Seafood 1', price: 20, image: require('../assets/images/Image95.png')},
+    {key: '9', type: 'seafood', name: 'Seafood 2', price: 20, image: require('../assets/images/Image95.png')},
+    {key: '10', type: 'seafood', name: 'Seafood 3', price: 20, image: require('../assets/images/Image95.png')},
+    {key: '11', type: 'seafood', name: 'Seafood 4', price: 20, image: require('../assets/images/Image95.png')},
+    {key: '12', type: 'seafood', name: 'Seafood 5', price: 20, image: require('../assets/images/Image95.png')},
 
     {key: '13', type: 'drink', name: 'Drink 1', price: 20, image: require('../assets/images/Image_96.png')},
     {key: '14', type: 'drink', name: 'Drink 2', price: 20, image: require('../assets/images/Image_96.png')},
@@ -32,12 +32,12 @@ function DetailsScreen({ navigation }) {
       <ScrollView style={styles.container}>
         <View style={styles.header}>
           <TouchableOpacity style={styles.backIcon} onPress={() => navigation.goBack()}>
-            <Image source={require('../assets/images/Image 183.png')} style={styles.icon} />
+            <Image source={require('../assets/images/Image183.png')} style={styles.icon} />
           </TouchableOpacity>
           <TouchableOpacity style={styles.cartIcon}
             onPress={() => navigation.navigate('Payments', { data })}
           >
-            <Image source={require('../assets/images/Image 182.png')} style={styles.icon} />
+            <Image source={require('../assets/images/Image182.png')} style={styles.icon} />
           </TouchableOpacity>
         </View>
         <TextInput style={styles.searchBar} placeholder="Search..." />
